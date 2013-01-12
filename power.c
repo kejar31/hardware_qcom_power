@@ -56,7 +56,7 @@ static void touch_boost()
 
     rc = sendto(client_sockfd, "1", 1, 0, (const struct sockaddr *)&client_addr, sizeof(struct sockaddr_un));
     if (rc < 0) {
-        ALOGE("%s: failed to send: %s", __func__, strerror(errno));
+        ALOGV("%s: failed to send: %s", __func__, strerror(errno));
     }
 }
 
