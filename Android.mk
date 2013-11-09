@@ -1,5 +1,5 @@
 ifneq ($(filter msm8960 msm8974,$(TARGET_BOARD_PLATFORM)),)
-ifneq ($(TARGET_PROVIDES_POWERHAL),true)
+ifneq ($(USE_DEVICE_SPECIFIC_POWERHAL),true)
 
 LOCAL_PATH := $(call my-dir)
 
